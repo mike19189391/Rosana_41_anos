@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Rosana | Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shortcut icon" href="https://icones.pro/wp-content/uploads/2021/02/icone-de-coeur-noir.png" type="image/x-icon">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+#countdown_dashboard .dashp { border:2px solid #9e9e9e; float:left; margin: 0 10px 0 0; width:90px; height: 95px; padding:10px;  border-radius: 15px; }
+#countdown_dashboard p { font-size:40px; font-weight:bold; color:#000000; margin: 0px; text-align: center; padding-bottom: 10px; }
+#countdown_dashboard .dashtitle { font-size:15px; color:#333; clear:both; display:block }
+#countdown_dashboard {padding-left: 105px; text-align: center;}
+div#area {
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">FECHAR</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">FOTOS</a> 
+  <a href="#temp" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TEMPORIZADOR</a> 
+  <a href="#malaquias" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TEXTO DE MALAQUIAS</a>
+  <a href="#miqueias" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TEXTO DE MIQUÉIAS</a>
+  <a href="#area" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BOTÃO MÁGICO</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SOBRE MIM</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTATO</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">41 anos de Rosana 💗</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="mae-1.JPG" style="width:100%" onclick="onClick(this)" alt="A mulher mais linda do universo.">
+      <img src="mae-2.JPG" style="width:100%" onclick="onClick(this)" alt="Essa foto foi  no dia da viagem a Campinas,A senhora sempre foi minha companheira e sempre será. ">
+      <img src="mae-3.JPG" style="width:100%" onclick="onClick(this)" alt="Que lindaaaaaaaaaaaaaaaa">
+      <img src="julia_mãe.jpg" style="width:100%" onclick="onClick(this)" alt="sogrinha, hoje é seu aniversário! que felicidade e prazer imensos é compartilhar esse momento com a senhora. te desejo muitas coisas, mas principalmente, que a sua saúde esteja sempre em dia e que a senhora se mantenha sempre disposta e cheia de motivação para batalhar por suas conquistas. estou há pouco tempo ao lado da senhora, mas saiba que já te amo! 💗 felicidades!">
+      <img src="mae-13.jpg" style="width:100%" onclick="onClick(this)" alt="lindaaaaaaaaaaaaaaaa">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="mae-4.jpg" style="width:100%" onclick="onClick(this)" alt="Sempre esteve lá para ver minahs conquistas e espero que esteja para todo o sempre também. s2">
+      <img src="mae-5.jpg" style="width:100%" onclick="onClick(this)" alt="Mãe e pai">
+      <img src="mae-6.jpg" style="width:100%" onclick="onClick(this)" alt="Que mulher lindaaaa Jesus. Xonei">
+      <img src="mae-14.jpg" style="width:100%" onclick="onClick(this)" alt="Perfeita💗">
+      <img src="mae-15.jpg" style="width:100%" onclick="onClick(this)" alt="É nois na fita mãe">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="mae-7.jpg" style="width:100%" onclick="onClick(this)" alt="Amo Amo Amo">
+      <img src="mae-8.jpg" style="width:100%" onclick="onClick(this)" alt="A mamãe que ama uma pedalada no final da tarde, após uma tarde cansativa de costuras, e depois da pedalada fazer um belo de um café e tomar com uma bolacha ou com um bolo.">
+      <img src="mae-9.jpg" style="width:100%" onclick="onClick(this)" alt="A mamãe que ama um açai também kkkkkkk">
+      <img src="mae-16.jpg" style="width:100%" onclick="onClick(this)" alt="Desde sempre comigo">
+      <img src="mae-17.jpg" style="width:100%" onclick="onClick(this)" alt="Miquéias e mamãe em Campinas">
+    </div>
+
+    <div class="w3-quarter">
+        <img src="mae-10.jpeg" style="width:100%" onclick="onClick(this)" alt="Já falei que a senhora é linda? kkkkkkkkkk">
+        <img src="mae-11.jpeg" style="width:100%" onclick="onClick(this)" alt="Seus filhos lindos que te amam muito e para todo o sempre">
+        <img src="mae-12.jpeg" style="width:100%" onclick="onClick(this)" alt="você é tão linda parece uma pista hot wheels ataque do tubarão">
+        <img src="mae-18.jpg" style="width:100%" onclick="onClick(this)" alt="MARAVILHOSAAAAAA">
+        <img src="nina.jpg" style="width:100%" onclick="onClick(this)" alt="Nina também entrou na brincadeira e pediu para falar algumas coisas para a senhora: miau, miau miau  miau miau miau miau miau miau miau miau miau miau miau miau miau miau miaumiau miau miau miau miau miau miau miau miau. ">
+      </div>
+  </div>
+<br>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Sobre Rosana</b></h4>
+    <img src="mom.jpeg" alt="Rosana" class="w3-image w3-padding-32">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>A melhor mãe do mundo</h4>
+      <p>O que dizer sobre Rosana Carvalho Santana da Silva, bem, ela é uma pessoa cuidadosa, carinhosa, faz tudo para ver seus filhos felizes, perde noites costurando para realizar os seus desejos. Nunca esquece de fazer o cafezinho que Miquéias ama, sempre fazia os bolinhos de comida para Malaquias pois ele odiava comer sem ser assim. Ela é do tipo de pessoa que se jogaria na frente de uma bomba para salvar os filhos e seus amados.
+        Ela é uma pessoa simples que não vê maldade nas pessoas, que perdoa, um pouco explosiva às vezes, mas sempre pede perdão depois. Ela é uma pessoa incrível que não merece esse mundo, merece muito mais, e seus filhos amados farão o que for para te dar um futuro digno, pois tu dastes à eles uma vida incrível. Este site simboliza um poquinho do amor dos seus bebês por ela. Te amamos mãe.  </p>  
+      </p>inst: atelie_da_rosana_</p>
+      <p>tel: 71 99383-3241</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Seus atributos</h4>
+      <p class="w3-wide">Inteligência</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Beleza</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Costura</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Amor</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Paciência</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:5%">5%</div>
+      </div>
+      <p class="w3-wide">Amiga</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Gostar de Café</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Ser parceira</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Carinho e afeto</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resumo</button></p>
+      <hr class="w3-opacity">
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="malaquias">
+    <h1>Texto de Malaquias</h1>
+    <p style="text-align: justify;">Mãe, a senhora é meu tudo, e eu não vou começar a falar nenhum poema Aleatório da internet, eu vou escrever o q eu tenho no meu coração para lhe falar.
+      Eu amo a senhora com todas as minhas forças, até porque a senhora foi a pessoa que me gerou, só por isso eu lhe devo a minha vida, o amor q eu tenho pela senhora é imenso, tanto q é indescritível, apenas posso mostra-lo com ações, mesmo não sendo um filho perfeito eu queria q a senhora soubesse o quanto eu te amo, cada suor q a senhora ja derramou pensando em mim e em meu irmão, eu valorizo com todas as minhas forças, a senhora conquistou o meu respeito dês de pequeno, lutando para me dar o luxo de algumas coisas, colocar comida na mesa e etc...
+      Eu te amo de verdade, acredito q a senhora ja saiba disso.
+      Pesso perdão por todos os meus erros, cada mínimo errinho, eu pesso perdão para a senhora, não sou perfeito, e posso melhorar, mas é difícil, eu tentarei, pesso perdão por ter sido uma criança assim.
+      A senhora é uma pessoa q eu sei q se eu sentar e falar os meus medos, a senhora vai ouvir e tentar afastar-los ao máximo, por isso eu te amo e respeito tanto, com amor, seu filho Malaquias.</p>
+  </div>
+  <hr>
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="miqueias">
+    <h1>Texto de Miquéias</h1>
+    <p style="text-align: justify;">
+    Se um dia eu disser, que não te amo é que eu te amo ainda mais, pode acreditar. Para começar esse singelo texto, gostaria de te lembrar o quanto eu te amo. Eu fui o seu primeiro, o primogênito, 
+    o início de tudo, foi quando a senhora descobriu o que era amor, pois só com um filho consegues entender ele, eu seu um pedaço seu, mas fora de você. Hoje a senhora faz 41 anos, 2 décadas e 1 ano.
+     A senhora conseguiu passar por mais um ano. Foram muitas lutas desde o último dia 18/10. Mas eu desejo a ti muitos anos de vida mais ainda. Preciso que a senhora esteja viva para ver todas as minhas conquitas, 
+     ver meu primeiro emprego, meu primeiro salário, minha primeira namorada (julia, espero ser a última tbm lkkkkk), meu primeiro filho, seus primeiros passos, suas primeiras palavras, enfim, quero que esteja em 
+     todos esses momentos. Todos podem te fazer o mal para a senhora, ou até te trair, contudo a tu tens a mim e malaquias, seus filhos, seus melhores amigos, suas melhores companhias para qualquer coisa, 
+     nunca vou de trair ou qualquer coisa ruim, pelo contrário, vou fazer de tudo para te fazer feliz. Esse site não é muita coisa, é bem simples na verdade, mas foi feito de coração, algo que a senhora poderá vera hora 
+     que quiser e onde quiser. Deixei um temporizador com quanto tempo falta para eu partir, até ele zerar vamos curtir uns aos outros, criar boas memórias e momenentos felizes para poderem ser lembrados futuramentes. 
+     Eu te amo mil milhões, tu foi a primeira pessoa que eu amei e sempre será a que eu mais amo. Curta o seu dia, a sua semana, o seu mês, sua vida em geral. Com amor e carinho, seu primeiro filho, o que mais te ama e a mais tempo.  </p>
+  </div>
+     <hr>
+
+     <!--Botão te amo-->
+     <h1 style="text-align: center;">Botão Mágico</h1>
+     <div style="text-align: center; background-color: black; border-radius: 20%; text-align-last: center;"  id="area">
+       Clique aqui!
+     </div>
+     <hr>
+
+     <!--Temporizador-->
+  <div class="w3-content w3-justify" style="max-width:600px" id="temp">
+    <h1 style="text-align: center;">Faltam:</h1>
+    <div id="countdown_dashboard">
+    
+      <div class="dashp">
+        <span class="dashtitle">Dias</span>
+        <p id="days"></p>
+      </div>
+      <div class="dashp">
+        <span class="dashtitle">Horas</span>
+        <p id="hours"></p>
+      </div>
+      <div class="dashp">
+        <span class="dashtitle">Minutos</span>
+        <p id="minutes"></p>
+      </div>
+      <div class="dashp">
+        <span class="dashtitle">Segundos</span>
+        <p id="seconds"></p> 
+      </div>
+      <br>
+    <br>  
+    <br>
+    </div>
+    <br>
+    
+  </div>
+  <h1 style="text-align: center;">Para o seu primogênito ir para SP</h1>
+  <hr>
+  
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Fale comigo</b></h4>
+      <p>Quer matar a saudade? Preencha o formulário e venha falar com seu bebê!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Nome</label>
+          <input class="w3-input w3-border" type="text"  >
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" >
+        </div>
+        <div class="w3-section">
+          <label>Mensagem</label>
+          <input class="w3-input w3-border" type="text" >
+        </div>
+        
+      </form>
+      <a href="https://www.instagram.com/miqueiascs_/" target="_blank" rel="external"><button class="w3-button w3-block w3-black w3-margin-bottom">Enviar</button></a>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Mãe, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, eu te amo, e eu te amo.</p>
+                  
+      </div>
+    
+      <div class="w3-third">
+        <h3>Suas moradas</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhUZGRgYHBoYHBoZHBocHhwcHRgZGhgaHBkcIS4lHB4rIRoYJjgnKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrISs0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMEBBgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xABCEAACAQIEAwUFBgUDAwMFAAABAhEAAwQSITEFQVEGImFxgRMykaGxFEJSwdHwByNigpJysuEVQ/FTotIzRJPC0//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACQRAAICAgIDAAMBAQEAAAAAAAABAhEDIRIxE0FRBCJhQrEy/9oADAMBAAIRAxEAPwD1i5hZrO8dwZTv8pjyrXGh/FbWZGB2rbFNqSInG4mFBB8KTIOVLFWWQxrHI9RUAc16iV7Rwt0Nc1GRTyK5FWiCS2QKlF2qsV2KTjZSkEcKwaQdqr8QCgwI06VCGio2FKMalY3K1Q2uEU7LXYqzOxkV2KdFOy0wIorsVJlrkUgGqKsLiGEa1FlpAUmkxplz7WSIO1RLd1B28qiAp6ip4JFcmwnhuIuBE6U44oHkAaGAmu1Hjj2XzY+5JJqMk13NSirols45mJqvcw6P7yg+YBqcirOHwTPEEamNTQ2ktiV3oZavJZKeyRQwVwxAiZy//GjvC+I5yAFOeNTQjifD1TIVYnvlWmPwMdI8qJcDxKIDmIjrzrlnGLi2kbRk1JJs8o7f8Ldbxe3h7gtNoNHIJWQzEcpIOp5a1mrGH9myPdRWXIHFsyCVYHKxHMSQfGveu1RR8OSMQ1lRJYp7zDKe6Ndeehr594mUVyEYuNIYiDsDHpMaaaaaRXnyjx9HSmiG4SBMQdpqmzSdasXjp4/SoFSTURHE47dKVIqOtKmM+x6a6AiDXaVMZmONcHZmzJER7v51mXtkGDXpLiaC4/hi6sBqeXiedduD8ilUjny4b2jGla5lo5/0Zge8pA6jWoMfw4oAeXOuxZYN0mczxySsE5a7FS5a5lrSyCMLXCtThKcbNK6CitlroSrKYcnlT3wxFHND4sp5aWWrBtmri8IulcwXTfx+FJ5IrtjUW+gXlpBasnDsN1I8wRU9nAMTroOXjQ8kUrBQb0UMtdC0U4jw/IFIG++tVbOGZjCqSfCksiasHBp0VgtOVCTAEmrN/BunvLE1qOz+AVFzyCzaz0HSs8uZRjaKhjblRUwfZkZZdjJ5LGnqd6nu9mUI7rMPODR+ka8558jd2dixRqqMYnBHVjmEgHcEa1cxXCAV7pggbAc60C669ao47idq1o7gHpufhWj/ACJvYlhikZUcNukwEJNWLvBrqJnJgRJAmRRnAdp8LcJC3ApkjvQNR66HoDU2M4yiXGRiNFtkbbubnPyQGh/lTZKwRMfjbrHKejr+Y/OrC4NzqADtzFDe0Xay2GyKqBs9s9TIaSI6arPketGLXbPDWcovlEDAxKurjSQWRhsdgZq3+Ul0heH6zOdtxdsWhK915BdSJXlEb6gkbRrvXkd5WzEtoR4UY4zxl77uqu5tlmdRciRJk6jYaDmaCYoidNfU1yZcjnK2VGKjpDZ5k/qaru0mpmE7Amef6VCy6/s1CNENFKpwq9T6UqLCz66S5UqvVNFNSqTWjKJmpsVxXqUNSA4UBEGs5xVlRihJM61pKCcawwYhspnYmtcMqlsjInx0Za4onSm5Ku3LIB501EAOmlekpaOFxKkU5Zq+7qRrVcoKFK+waofbvxXbuLJ0ikmHnberw4G8SR6TrUSlCL2WlJrRHwNFa4M0aagHnWvA0rPYDhoRsxOtHrbVw55KUrR04otR2QYvBrcUqwn9eRobh8L7Mw2vQ0dqN4O9Zxm0qLcVdgrilgMhEePwpnCbKqvd586LmI1oFxO+qHKvPetYNyXEmVRdsu4nCpcInl0qawgQBRsNBVLgpBWJ7061PxO81u07qJYDSdpOgqZ6/UcaeyziMeiCWMT/AOfpVe5xq0VbK4zCQJ2mNJ8JivOcXhL+Jd3R0WCVUO5BaDBjXafr0rKYnG37TslwQSDI3BBWAwI3Gx0rBuiz1odo5W4QoVES2QTMl7oLKsDkBv5V5FxvtCHdypczJDMxkGG5DQQcoHrVEcWdUa3mOViGO/IBfXQARQlkGpmOlJyJbL4xFxIuMCFYkd48wFYgjnoymaIHtNcbPnOYsiIpHLIDkb561m3uMRlLEgagTz0H5L8BXUaB6VF09Cs0eC4utpGusga68KjHXIFILOBzckDWeelDe0PGLmLfNcZiQIXnoOs61SW4WGXcCT4irPEraEqbHdCrLS5JJXofLWBVbY+wU1tsxDd2NCKhuhfDT51OzgL3oLNHmInSfX6VBlHn/SKBDHuToNqhmnzqZ0pxI2Aqh9EqKsa6/PzpU5MQRoB02pVOydn1hbep1ihisRUyXTWzRoXGSuA1Gtw08tSAkVqZeWRFcBrjsaEAGx/D4BMUJa3Fap2BGtB8SoBmurFkfTOfJBdgtUnlRDB4HNrl261PhUzEdKgtcTxi3GtvhM4klHtuiqUBjUMdxI8aMuZrSFjxJ7YZwWDVdY18aIVVwzMVBZcjHdZDR6jepWuRXLJuTtnQkl0K5aB5a0xARUCYxi5XIwAA17kfek6NMaDlUpaTvQgLKmq6BjMiNdDUiGkXigZTxVthtQO4hJjKZ2o9dxFUrpU67VvjnxMpx5EWCwjA5icsdPz8Kzfa3G4i6psWbbuXEgo20HTTSdgZkR41qw4IIOx0qt2ftMgcuZcuRtACrooXqNzPjUTbk9lRiorR49ieC8Sw6h3s3AoOeR3wp1mcpMAzryqLivGVv21UrDqSQeYBnSecnfyHSvoNTXlP8T+C2VBvrbW28xKEQ/8AqQczO4186waoo80RGfMQNEBZo5KNzr+9KfisGRcW2gd2IGmUzO8AdIgzRfh+CdyjJbMsMswoDAQhOpAOrKD5id9SXaDCXrDtedGSQLeQnSAgVwGWQBptPKNtKlJMVGTw+GDko5CNqQ7A6MqscpjkxEbdKgSyXKqurMQoXnJ0H51bxOFuOqOzA+1kAyCTk3JA1Edadg+G3S1soZdmyqAYObIWVSeRMR5g9KKFQW4TgFtJiBcVHZQ0bT3ZGhPU6iPxL5UAyTprymNfL10o/wANuC9/Ku3FtZVCOWgMxV4VQC3lLAfdG9H8JwrNhrDrpCK0KpUM0ZWYuFIzn8RHXaZqqvoo80xKDedTPy2NVAY1B1rWcQwaMjX7Yy5HKukgugBkMR4c4oI2BzqHVlBY7EhQOQPlodfCiqJBJFWVRiI261NesZXZWBQqcpU94ggCRI31+tRXLg8Y9aTY2cLRogmNzSplsEzApUAfVC3wat2WXrVFsBGzU1MM9ajsLM4pLcqhbtvMVOuHaYpUFlxLgNdZhzqH7L/VVa8r7UJWws7igIMUMCzyq9kNcFqtotRM5LkQ2DlO1W7eI74/0n6rUtmANqawBcaR3T/uWolJMqKotqRUTjWulTuKq37pALEaDWs+tlle1fm86g8lHqJn/d8qu5DWZwuKi6D46+u/1+Vakmowz5WVOPEiDkaEUy65qe5TPZE1qQD3LGoijUV+z1xVFVYqB9u2aocW4iLSkhwh6kAg+EEj60bxFwKpboDpXlfFcTfxF72aKM7kgBe7O/pHielROdIqMbCI/iE6EB1RxMSrxA+H6+dWOLYn/qVgKlm8jr3kZ0lG0ggXFkCR1jaiPB+xdmwA9wLduaEswGUHoinYDTU6+W1aRHjalFOtiPLMXfu2sC6mxcR8NcV1JXuZM6khySI7xfYHQ8tKn4hw3MifaSWZwt2Vbup7pYPpMkTHIeEE1q+2fDWvYa5knPkYQPvAQ0H/AB0jqag4LwsXcNZdwCfZofPRRr10ERRVDPMuL4IIhYJBaCNB3RJIEiNYid99aHtdfKjKxUhg0jkTK5hG2ix5rXqHGezQa2wGpC5RJn7vIchv5RXmNrDMiFnRguVih2AdHAYeYIYx/VUOLERcLvLZxCXSYyuDJgmNpAYHXUHUda1PC+K4i8tuxYV3Vs4GZcqZQzEtmMz7yiYAB03qz/DrsqmKd8XiQXQOVRG2LCMzMOg2APQ1uexXBrdpLjKO8bt5JOsKt1oWen6mrigPG8Xw1hiXQ2yrKjZUUBvMa7iMx+lXuHdkcR7S4nskZ7Sq/s3Yao4kac4I5EbV6x2k7M2X/n6rcQh1ZYBY7ZWMaggwfCmYkW7eLw9+e7ftNZJOxgC5bJ8YDr6iq4oDx7jXC2tYebmHZXLkK6k5V0UlSpGm/XeNqzow7NACsWOwXX5Cvee2fDHvWmhYUowRBIhiIDEDnsY8ADQL+HPZcXc+IchQJs6AMxYAFz3wQg1AiDMcqmS2FHkV606EoVKspIYHQg9DSrf/AMRew7WH9ta/+lcfKFnvA5AZYneTn22iu1PFio9wRBNS+xFUWc5Z6kD4tFTLihr5xV0xllEAqWaoHFDrS+0zRTAvAzXHWRUNpx1qfNSGQNZikwEbU9pnauuhjSnYFfLrTHtnPp+A/wC4VNkbpUBdhdP+gf7jRYDxdI0NDOLcRQq1tXUsCAyggldMwDDcTpvRAuJ1rDdpuEl8S7C66Z0RoSF/EupjU935is8zqJWNXItwJmtdg7wa2rc4g+Y0NeVWMGjO9tcTdLp7wzbf+2DWy7HYR0W5N131VQH1jSSfWR8K5/x9So1yr9bNQj1LFVWZl3FV7WKdrjIFGRVBzcyTyjpv8K7WjmtBFGp0Cq7FvCq9y8QYINKiizjrWZHVdypA+FYrsdw/LjrxuQbiJAPgWgx8N9961/2iBJIWOZMR8azmJ4vgreI9uMSmfKUdLf8AMzjf3UBIYGPhUSjbTKi9NGoxuHJGhoThLgcuFJ7jlGn8QVW09GFBbvbS3mZkTEmYjMhVOWykFh6gUN4b2wVGvl7fv3S8d4RNu2pHu/01fKhcWzf2Su3xoJ2PULaewx72Huva/tzZ7Z/xYfCg47aWp2jwzj8xVTA9prKYu60sqXkttplP8xO6TodihXX+k0OS+hxl8PQPYKd/pWO7f8GtfYnCQrIXuwJkhiS/+4n0qTi3atfZk4a6guaQHRiDrBiGAn47bVkbHFMXccpdvwlyVclUjKQZyyNNzUuSGov2jZfw2uZsKVZQrB2YRHeV4uK2nixXYe70ijPArfdvgcsTe+b5vzoF/D7iCXMJb2W5bi08RJCgZDO5BWPnRvs/fBfFDbLiG38URvzppkMrdoseESDcVBzkBiRG0T86wOCtvdVsWxOS1fsi3M94G6guvBOgCuY8fKtB/EG4iljJLFQYPuxqBtqWmYGo8ueYx/aXJglw1u0gi2hZ8xJzsq3GIA/qMaztTcq7BRb6PUnUEEEms5w3iiYN8Rbd1QC5nUMwEq6htF65s406CsTj+M426CHdgp+6ncHy1I9azozG6NDLBhrrqrD/AOVJz+IpRrtnp/HuOWcZay2z7jqTofwvETy1+VKvMsdiLlpe68Zm1APQGPqaVJTDRvX/AIpJJUYUwus+0gnKw6JA+NZ1+3+JN6QQUJB9kEGx70Z4zbEa+FZG6VzOddzO/wCIDamqymTD9Doo2Ecz4VHKRCTkel8H7bszsl5QESc1xQ+msLmTUrO3mK2HDuJJeAa26uDrodf8TqPhXg4xSL/22/uYD6VdwvH1txkthCOavB8deU1SyP2aRxP2e74jHraUs7qgAmSeXlufSrfDeJpdUMjq6nofqNx6ivn/ABHH85koT+LvgmP9UT8TTE46AQVQjxD97/IEHpT536L8X9PpZXHOnNcFfPuC7d4lIAe4QOTFX6fiM/OtDhP4oke/ZZtttD48yOlJNEuDPYM87UGx/FEt30RmGa4qqg17xztNY5/4oYc2nKI6uF7qsumbl3vDy5V5zje09+7fS+7S6ZQpiB3TIOnOfrSlJLozenR9EXFQCTEdayvGrite7pBhEEDkc786y2G4u1+2r98rtlUhQpG4ABGnxqbhtyC/dPI8vGSTPgPhXNmzKS4o6McK/YrcLwFxMS7ssI2eDK82BGgM1vuzF9QHUsJzDQ8u4P36151wribtibqsSV1hdNMrACBy0oncuqXbQzAGggjTaRrU83CVv4VxUo0j1Fyp1PKhWKxtmyztcuJbBKiXYKD3dhNYZ8U6o2V3CxJB10Gu515UZt9sMISzkuVYgpKakZQJE7ayK6oZFLoxlDiWsT2xwykhS9znKI8f5EBfnWW4/wBtkuwlsvbIn/7hEJ2OqWg7HY9N6Za7RYZiF9jbKrkl8qhsoKZw2hzAw/PUEVc4vxPAXLTLasopbLD5FSIYEwdzIHLrVOS9snoxWMxiG4bbkO66kMr3iOejXHAnUcqbjOK+xtBouEF8uVWt29AoMjLbPXbwp4wUYl7+ZCryFEkE7Ry8Km4xhEuooYGFJY5c20CI61POP0ds0XZjKqs2VgXynvvnMQYEwPGr3Cril8TK6e1/Cf8A0k+FZTh3aC6O6ll7kKqjKrACJAnSmpxDGs13IhTM4LQF0ORQBLHTQA1XJBV9m3vvZCM5SQszCkk5ZBAEa7UN4/g7Sol5UEI6swy+8jd1xt0M+lBcPhcY4IZiJkx7QqNTJMINdfGor3Zu8Zd7imBO7seuk77VSbfolyjHtmjwqYG4CyZANjIKnTw6VTxaYBVLe0QacifTYUHwfC7Jsy+RHRyjO0HVWEiCY1EfGpbOHsrqXiGI0VdcstzG2kQPEdIXRKyLdA3DcRTDi3csOPawVcFGOQhiVYFhB0JGn4h0rS8N7ZKjXmFi67XXDgDKAP5VtO8eRJQ8uYoRgUD4cq1tmVjcQFSpIhyZykggjfrQmzj3T2tt2hpBJ/EFGUIp8TkM/hmp5V0U0mtl/tLiMTi2zmy1tRyZ8y+BGi5Rvy5mhXsLww5OVcgETzbXcdROnpV1OLPfK4fKIZ1UlNBkAGaPr5UT4xireUYZILEokKR3RnUQfGOQqXJyY1VaKbcHxJEtd9F0+YFVbvZwi5bDue/nE76hc3M+FbODqOnOhfFWAaw0jS6AfJkdfrlo2ux6fRlO1XC0sW7ZGpZiPlr86VEu2EN7JZn3zoemQa/E1ygNGMdjmcdWAj1b9KJ4fhl+5mVLbFm76gRJUyc2vKmYayJJUFtZ2jrrr60ZVWuEJbAT+VuHOvfUknQa8o+dVaYRjsHcS4Rchn9kSiDKzwCFZRBBPnFHk/h+CgJa5r/SOnlQvG4F8hu5+7myZdZ5CSNoojZ7NswVhetkZeRJG/1pxiVNf0mXsaLcL3v5kJqsbkGqmD7EZy+j9x2TYcgD8daku8CNsRnRs8r3eXeXU9d6pYTghcsM6gK7qTkn3IkxI08PrT47B/8AnsKL2CA3Vjt00+dR2uyodmthWm3m0BE65Dz33qtd7OLp/MQkGPcABDQZBzQfKozw0kBEdZtlonugyFnn3I+dJxQRbplDtBgTh7ns9dFU6+I8OVCTcmieI4deKO2WQgJc5lOUGIO8ka8qFWbesTBmPWsmqM5L9qDvBOLPa7igFGImeU6SD8K3FjFLbS47kBUAJPPn+x51iMNgLgUHLpoZ0266miePxavYa2zd58usbwddvKfWueUU3o6YfrGmx3C+1WGN8/ySmckZ5mZP3hyk1oOK472QdgAWCgqsxmMR+/CvOzhBpEGIPl1+dHOK41WypPuoggjWcok5jrtl+FVOCtUVGSp2FuGceNy1d9qoVlH3ZOYMCBA33qpxC/YZULhoAyqYEwIGuvUE+tZO9fYEhWMeHP8AUUz7URGsEetXGNO0ZuSapmjRkAIRGcFdSXCkCSGOUDaI586Zcvzy8hNUuHYiUdiwBURHdGYEifP/AIrj4mSCI6R9aJJtmUkW/ak7nbbfx26UrWLdToT6nbzqsH5jypufr8KiiTT8JxNsSxWHbSQYB35f5E1Qu8eS1duBsxDlWBEaDIomPT6UJu3oSdQdAI0979ketPxWFVvs7ZIzypJ1LAOoDnUjmRy2rpwuP+kPbWjQDjb+zFwM2SCRCrm1Om8/OhV7tLcY6PcA8IB+Ioy/Dslh0gAAHKB0kR+dZtEE+h/KtnJ1ow4pydmiQm2GZ0zo4Ru8ZIchlY+JIqLE8TVkK/ZUy66zrO5I0mdjvypuNdznUkCUUouYMQRDTHIRNBLuPZRkI1/FBEz4cj61lJjjFPbIMLiryFmtvqMzRI0Gskg6HSmIzXFuEGXQBxtJWYaDyygj0pnFsMyKrAKVY+9pKsS3dY8tNQf0qrwrG5LiuRMGGHVSIYfAmoqmO6JcHxJ0OZGgnQkAbcgJHd9KucLh2d3JKopfTc5XXnvzOtDOK4cW3dBsplf9J1X5EVPw26RZxM80Rf8AJ9aOOws0lrtP7RCjhFhpGh90sSZjmB8TSxwd5i3lRQjhmWS0Ou0GPGJ2rJW7iwBosTLaSROnME/Gia3iwfIZQKgcOtuQdtNI3gTvt0p2/ZSZpeIcNlkgxCtOgA1KfpSqKxxFcqhiFCqAD1BA5ctjSp6CwY+BJnviOgcCfMRrt1ovwThNtUK3CGaTHe+7AgfKhV23cX7rf3KjfA6/lUBunmoB8QV+UgVSi100Nt+0aZkwSkqybb6NT0TA8gB8azAvn8G/Qmfzplu+S0BWPlDH/bUyjl/y0Ll/DQ4/H8PtEBhqde6GMDqdaffsYcibSjXXNO485oRj+zHt/ZsHAJEHQbESNj0p97Am3KwIUQCM5EQOYBA9YrOUptJRe/Zo4tK2iwcOOnjAI/YO9d9vh9FyxeC+6G9493fXpNDhaBBI1iNQ4jxoTxK2LTi4AGLaRqY2EgjnEgUoLLK0/wDgU2g99ruJmAtgK4KtsZB0IInpQkovvBVXUancdNDRBEUDvI8eJ8uexqk+FVgwDAecn6HzrNRktNkWhxxDsMpckDf5EaenyqItEcz68q6uHIEZ1g+flyHlSOAaSfaKNdwDqOR8P+aaiF37IHuEDMIGwiRPPbxqnibpnmZA3oqnBixMXd5mABtHMt49Kr3uGaxFwxzlQPPatFEa0BWvE+lRiZ/c0TxPDWWDkaSecR9KYnDn5odfGK00FkCX42HnVhAGjcnlHl1pLw1p93TXn8zUlvCuswo9SNOp3qdCbssYZGcHLP3tz06TSu2XABAmY2idRJ0qOwl0agJ/kv5tVhWuDUuoGnU+Xug0cUGyjibzsoXYbk8tNqK4S2qMjm5ouUanaGBiPLx50Ge/qZ1g6+fOme0zeE/lSV+ieTR6A/HUcOraad2NZEbnWstaxAJIbQQYM/KhHt4OxJO0/Ok94DbWfhTcpMXuzR3ePgtCrlA2M7mACXj3vDpNAvtHeYOSddCCPzGtVBdmevOmGY31NPfsVUGcRetuhPezzEbKR3t4PvDQg+MUJuEAc48OdLMcp1pqjrt0oHZcx13Patv95R7JvHLqhPpTLTlbbrzfIdfAydKhS4VVlGzQSPLaomc+VNu+gsaU/wDH1q5bcKramW0gNAjxH3hUNtpBGmx/f761Bsd9OtHY7CdrFIwAZZIEbnkTH1pUNcwaVGwPULAcOzOwdTsoEEa9eY3qCzecvleyoTWHnlyka61MZpBzT4mtle6+Hz5CknQBsvdJPQiaZxSxbtoWQKHMAZdD3tPhFXCQd/nVTH2FdQJ0VgxGuw3jxpNUhxe0VsNnVlOYkIYiN40mZripddnKsVIaSJI3MjzqO1jkUn+WWk6HaNOk9KVl7pLOuhMSu0aaVlHs68raQ7E4W43voGA3ynKT55d/hQa5dM5eQPnWvS+pQBtGjWZXWNTO1D7nD7cDumTzn471045KN2YRdgdA2hzwdpkg6c5FPL3B98nzfN8mNHsPgNTKgqVWCeZAIPrtTGwlgkg5cw3AIn4VKnXoylGLduwA+KvKRIBH9SKf/wBYqu+NeZ7g/tX9K0z8JtHkR5HWo/8Aotk7gn1pucfiI8S+sAYfiLhs0/4hQfjFXLvFUcd9Xk8w6f8A86Kpw9betpACdDMnSZqC4+IBnKk+AHjz350+cWqaF436YOfFIw9+7PiqN8wwPyp6WEP/AHCByBtuOfUTNWGxuJHKPSfqaYOL3l5L55B1qGoP0aLDJ+0QNhTye2PE51/3LSbCEiM9po2l7Y+pFTnjd7eQfQ/rTTxFG9/D225SNDtrrqSalRj/AEHhkuiBuH3IlbeaPwMraf2k0x8FcUT7ByOmRvoB4mpXXCvqFdCOneHoI3+FcTCp/wBvEkeDyvzDVShF+zNwmvQPbBTJdGWd5BH5aGq64VJJEiN5Io0bGKUSrOw/octt5axULcRxSjvM8HmykjXpmEU/C/TIeuwamGXSc0DTlr/xXDhVA3IHLUVdHFXPvLbfrmt2z+W9cPEQd7No/wBgHyU0eCXpk8kUWwQ5P5yNPlXBhBtm+XrrRD/qC87CfG4I9M1IYu0d7H+LsPrNJ4ciDkmDDhSTEjT6U04UcmjzFFTdsERkuKP6XU/7kpL9n63x/wDjP6UvFk+BYM+yyRJ00pr4foR60SFrDf8Aq3B5op+jV0YazyxH+SN+RNHCa9DBv2SNZXXlzFJcFOzAdd6IfYk5X0b/AFC4sf8AsNN/6eRtdtH++PqBScZr0FlN8Kk6sQfQUqvnh7nnbP8Aen5mlS/b4VbNfm6V0GuelcNas0HCk1umCZrubx0oGDcViii5AogtlmBpuCaIpA5fKhGOsy46ZwZ89T+/GjEiohHs1yScqOl1PKoreOQgpkJKmJkAbmPhHzpxgbUNvIwdikgkofDQnN6UNfCIyoLyfukjw0PyO1CsbwbOxbMQzb6CiCv0P79d6d7c9DToVgrAcPu230JZdtCRHjE0auXYXQmdN1nz/c0wYrwrpxGu1TTHoDvxx1JzWwRJ6jSrOE48jsEKFSfEEflV45W3A9RVduHWjug8xp8KNgWzcWd48wfqJqN1T8aa+In4HWoHwQOzuI6kGq+K4a7feU6zqI8OVIC0cGh5A/Oon4cn4Pyoc/Dro2Bn+lqbhnvq65i+Wdc3eFFoLZcfhSch8z+dQPwgciRRn2hOxQ+g/IzTLhIElOp0JHyagalJewKOFMplXI8t/jThavr7txvifzq7f4ginKVfl0P500cQsn78eYP1qh8/oPupfb3greaqee8mqb4f8Voekj/boPhWjW9bbZ0P9w+lSGxI6jw1pqUl7Jbi+0jIvYWdFYes/kKb7ATufhPLzrWHDrzFMfCqeQ+FNZJL2LjD4ZhbC/jHqrflTPs/9S/GPqK0T4BPwj4RUZ4cnT5mq8syXjxv0wD9mc9PRh+tNNp+ho4/DE5SPKPzqNuGdCRT8z+B4ofWBzbYH3SPT/imMT0+n5UXbhzDZvmRTDhbgkBpB/q/UU/N/CfCvoL15/pSol7K4OS/4qaVPzL4Hh/qNIGpwqFXO31romIkCsjQlNMYVxSevqP1rocdaAKQwcOWLFs0aGIEdKtKhqWB4UopIBgBp2XrSNIGmIcEpNaBH/MUs0TrXaAOey6T9frXGQzsTznTepA3jXQRQMiKeJpqXFJgESN/CrHjNNNKhCUnzpymm1zQUUOx+aug0yR09KRIpcQsT2lO4BphwyciRPQmuNcjc/v0p2flS4hZUxHDA5ksZ61RucDPJ/iKLm9SN0RRTB0Z5+BvM901PYwrosEMOmU/GNaMe08Z8qRuA9aKY9A2ziLg0zN/cf10pfbru8A+YX8jNEDcproh3UH0FFMAXe4w6mDbX0zUk40OaH0M/WKuvw+2fux8vpVd+DodQSPI07FQl4vaO8jzFTpjbZ2cesj61SbgnRz6io24O4+8vzE0WhBhLef3SD6ik+FYfdPwoVhMAyTmJU7yNRUhsuDo53jTOIHXTcUWFFvJ4V2qZvXhoHkDqf1pUBQUTc123zpUqoCJPePlT+ZpUqBkg/fxpDc+dKlQI7TVpUqYDxSWlSpAPauClSoGc61zl8aVKgB592kfypUqBDOfwpr7ev50qVADb+9ct++fKlSoGNubD986dd2PpSpVIFDE7fvrV/l60qVMRx/f9BUTc/OlSoGdp9ulSqRDqXWlSpDRGu7elIb/AL60qVMZBc3pUqVMR//Z" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"></span><br>
+            <br>
+            <span>Elísio Medrado</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGCBUVExcVFRMYGBcZGhkaGRkaGh8cGhwYGR8fGhoaHxojHysjGh8oHRkZJTUkKCwuMjIyGSE3PDcxOysxMi4BCwsLDw4PHRERHTkpISk5MjEzMTExMzEzMTExMTExMTExMTM5MTEzMTExMTExMTExMTEzMTExMTExMTExMTExMf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EAEUQAAIBAwIEAwUFBQUGBgMAAAECEQADIQQSBTFBURMiYQYycYGRQlKhscEUI9Hh8BUzYnLxB1OCkrLCFiRDc6LSNIOT/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDBAAFBv/EADARAAICAQMEAAQFAwUAAAAAAAABAhEDEiExBBNBUSJhgZEUcaGxwTJC8AUjM9Hh/9oADAMBAAIRAxEAPwC63h2zNttw+PI/rXbuqD855d+tB7amp0r6TtLy9z5pdQ3slS9BGwbi5Un5Gj3DuJXD70Gs3pr7LgVe0+qbmDPfH0+NQy4tXKRqw5VHhs2S6lY5iqOu1OInaxIgjHyoEnELgzOJoppdcl1SjDJ/P5VieBw35RsWeM9lyXdLq/Lm5LDoOvyq/py5Ez8poRZSEi4u+ORjp2qS/wAR2KBbB9BGKnLHqfwlY5NKuQTe8R/OoLOvDjA+tBbvFLn3vwFR2uIMwAAG4+kdfjTrpnW4j6mPg0d640Yxj5fPtQ5HdhLOPQjoe3rSs6F2AHiMJEnH6zVt+BJA2swPeZpVohs3+gz1T3S/Urf2iLcqTJHLr/pXLfHMSRJpt3hAQzcYkdwP16Vy5Ys8wxPpNOljfiybeReaHXOOufdUCmXeIAiSN59eQrtuwhnynPVhP0gCKYeG8/Nn4fr0pksa8UK3kfmyG5flYBPcjMfCnafWuuJkevSuXdIV9fUVFFVqDRO5ph2w8hTJE9ZwD8KvrcUid1ZttT5duT2np3iu29Qdu2azSwNmiOZIJaviI3QMjv61csaoRHPuaD6d0AO5ZPSrX7UgUgzy6Uksa4SGjkfLYXF4RM4odreKJBAzQa5fOQCYqu1PDpldsSfUutiyeIsTyx6VMmqVlMmKGKhPIV1rZ5RWh4oMhHLNbhCxbUnBqS9qESQDkVX0XDHefs9p60S0fBACC7Ax0qEu3F7s0Rc5LZAm6zuywhJ7Qc/yrlzWszDeOWMY+Va8R0oDxvQbm3KAPQD8TQhmjJ01R08Uoq07Ik11t1i4mQIBFV11VtV2+GG9T1quujeYAk+lEtDw6CCxA9DBP0qklCC5/USLnJ8foR2NR9yyCfgdo+dV9WLxJiD3CcvmaPG2uOZ+v5cqjvPGApz8YqUcqvZfcs8brdmf/s66egH/ABUqu3rN0k4H1H8aVX7j9oh216Zh0SplSpFSpVSvQczyVjIlSpbajrPyp6pUipSuRRRGhOxxUtokcqSpUqpSNjpFizr3BkgN8RXb9/dmI+Bx9KhVKTEDmQKi4wW5dSm1RyKbZH5n8zXHugRgn4VLp7Z2gx7zGPqT+lB54J1qRywzf9rLSa9wRB5fSr9rjLYxjtQoW6eEpXDHNWOp5IeQ2eMKcFZHWhLv5pUbc9PwpgWpraDrQjjjDgMskp8jjfc4Ln61Ys3ioEwfT+dQBB3mnbaDUWFSktyY6joBjseVQsk5in7TTwx5TS8cDW3yRWbIJq8/DhErj49agXHI1ILp7mlk5N7MeKiluhg4e0TyFdPDmiSYqZNUQcmf67VzUagnrS6p2HTCgdeswYBn5RTm0DAAmM9Osd6s6cwZgGprp3eYkfDPyFO8klsIscWrItHwqRLNHLA7VctcLhpnHpTbesgRtqQcQI6VGUsjZeKxpFprYQVJbcET0oa+sJwVrv7fAiKl25D9yJfZvWKo6nVQfMCQPpmoG1pmYFVr91nwc+lUhi33FnlVbD9Xrd2FBHLPwqNNUwztn1zVnSynMKPp+PWnHXifdqm3Cjf1E+bdFO5rLrDAPxANQjR3n97dB6k/pRE8S6wagv8AEWPIR+NcnJcJIElF8tsr/wBkN94Uqk/arp7/APLSptWT2gacfpmaW3TxbqdbdPVK1OZgWMhVKkVKmW3UipSuY6xkASni3U4t09UoOYygQBKratIYfL9aJ+HVLiSwV+H8azdRK4mjp1UjG+y3FLly/etsFCp5gADzLEHmT2/Gtxpx5LR/x/xrF8H4pafVXbSWBbdAxZ4UFoaDyE5JnNbbSf3Vv/3B+f8AOvNn/UejHgj04JN0Ho4j4RH6VMqVzRnc90dnj6TVtbdb+llUDD1Ubn9CBUqRUqZUp4SruZBQIQtPUVKLdSrpz2pHNDqDfBWIJpbatjSt2p37I3p9aGuPsfRL0Uttd21dXSmnjSDqaDyI5Y5A/bS20SGkHekdKO/4UO6hu1IHKI5U5zPSKvjSDv8AhXRpV9aXuRCsUgbtrhU0VFhB/OmubY6A/Cu7vpHdquWCorhWinjKPs/gKa+o7LTdx+gduPsF7acBVl89q4qU2sXQQBPSp7ehkZaPhTwD3inqe5NJKb8DxgvJxNHbHMT8T+lSEhfdVRTIX1rnhjufrU22+WVSS4RzxLv+H8aVPgdqVC/kHcyFzVhGZXS4oVVbdsJU7jEDbJJEZq1Zuo27a07TDYOD8xkeoxioU02qBWYIODtewTuPL7PLp8xUq29QG2PbgMLmwFl3EqEgbkMCSz9Og9aZ5pr19ySwwryTo6/eH1FToQeo+VCSjiQbN0OHCbRecjzEhTz6kREc6kW7cGwPauopcKCYMNMLIdZHTn0o95vegLEl5CyD4fSp0tA1mxqwJIF1gJ+xaiVMEe6M56E1aTiTLhWcghTlMAMNw5OsY/EUHkfphUF5YdGnFDOPW9u3PT9f51WHGBAY3BkT/duIyVz5zHmUjNQ8T4itxbc3rYwSCQwkEmMQY9wjl0qc5uSrf7FIxinf8gK3wqzavXNRJVnDbmZvKAxB+AzFa3Qj9yPS4v5rWR45p0uobDaqwpuKvMvPnhlIGwDtzPWifsxxaA2muXrVy74vk2Hmg28xjOG5VnmlzZdPwaLRkG7cHaJ+rUVGmBEgzQdNVbFx3EFTEwRPUyR8DVm3r7YOCcnbEj4RE86tjk4xrglkipO6svjTjv8AhTxp/WlbcjlXUYST3+lU1SEUInV01SBAKiW6RiTUnj+v4UrcmFaUOAApwaoi/au7+/5UBrJd39RXWbE1DupFz0P8K6jrHjUCa6LoPIVVM/dHxn+VdRmGMRR0gUmWmftyqM3TTfENNmuSObE4Jrnh0i3rSmmti7C8IUgoHWuE0ya7cO3omPxqNttMJrhrkgNjoWmMBSppNMA5ApSO341w01q4COyKVRzXa4J5rqlVvCNuxb8u4AhPeI2mTESfKR8zRLhOtAuquwI+24zBJXJS+TAmVPkTr2o2nBNOInZjqYz8c/X5Rt5VNa0emRlabcqcHGenPrz+tRn1UJJ7bjQ6aUWvi2/IGDjFr965iPEs/wDqEnF92Hm54tiPQCq1jjatbtgu5Y3xO66xO0ZEox5SBn0rRBLef3fP0HTlUnh2/wDdH6VJdTGnsP2Ha3AWn4uieMEdx/fbQt24oDSApCgbZweXc021xFbdwFWYbrVrdtdlkL4sA7cY3Ke9aIBf919a7/8AqHzau/FK7oHYlVWZa1xJhLgXN72x5lLAki8zEGBk5J+c1zS6o7vEe3c3smTtbJBviDCHMuDMdfnWutk/cUfOalUt2X6GuXU/IPZ+Z5Vx63fF9XSzcKlbLN+7kb1RATlTEARA6imez9hxxW27WrgVbjeba0dh9nrXqHECxUjy/IfzrIvqnt3xuCgkgjGJFQn1bj/aVhhV8kqXnZg9zT3SQViVn7BWSNpHXqKv29R59wtOPMoH7vG3cpJ9wAHHPBqw/Frp6KPgv86iv666OZH0FaMOeWaVKJLJGOKNuRbHtHb+431H8a7/AOI0P2G+orPeEO1dFoV6/ah6PH7+X2H39pLQ5qZP4+gPWnjjyfcP1/lWfNsUvDodqA3fmaMcfX7p+v8AKnLx1fu/j/Ks2LfrTlT1odqAe/M0i8eU/ZI+f8qkXjKetZmPWnA0rxQHWaZoX47bBgkyfQ9flUh4xb7/AJ/wrOLNcuriGIz3NDtQG70zQ/25a+9PXHb6U1OPWjy3fNWH5rWVXwk5G0vwKinftVv/AHtv5MD+tHtQD3Z+DT3eOWlEswA7nGaiPtLY/wB6v/NQgWjXRZ9K7twOWSYZHHbZG4NjvOPrXDx23978aENpgRBUEdjmmHhyf7tfoKGiIdcw0eOW/WmnjidB+NCG047VFdTaASMZ/CJ/MUdEAa5hv+2h0A+v8qiPHR9w/Rv/AK0FOoUTPPscVdW3ImKGmHoZOfkvJxiRO2PiSD+VI8V9B9T/AAoVrXRB5zt/PP8AXOq2kuW7ghG3RIme3f1yKFQG+MN/2oOw+p/hSoX4C9WApV3+37DpyegHw7hr3WgQB1ZiY/mfStbwnhlq0PKJfq8Z+WMCrlplAgD9KmF30FeLDosnLRtfVY/YlPoT9f1inhf8P9fWuC4ai4hq/CtPcgttUmBzNWXRyS3ZN9VDwWVU9h/Xyru094puku70VoIkTBqwBVF0vtg/E+kRhD3NPFuorustL71xB8WH8agPGbPRi3+VWb8hRXTx9nd5+gFxf2ot23KCzcYj1AHOO57dqBXuP/tDBP2cIJmd0nB+ApvHip1BJkbiIBGfePPtzqnoUAukTkTj515c27aNsUqs3b2B4pMc7bfkn8KHMtGXHmUzE2WyOYwM1nb/AA0Mu9rlxhzE3THx8igfKK9boJaU0jy+vitm2SXGA5kD44qpd4lZUwbyT23An6DNTWODWCTNgeX7Tw0+okk/WK5w9EACoFuER5htA28pLKNsjsK9BSZ5blGiAcStnCi4/wDltvH1IA/GujUuYAsOJMLvZEk84HmJ5Anl0qyL6g3EXzXElgpMTORmTjNTF9pli27YGKglgOh2jlzNG2cpx8FLbfP2LS5A95rhBPKQqiPrUn7Lc3BWvoJ6Lb83pglsTiTAFW9MMbsyZyygNHQGPgKj1a3fIUKBuTEqeXoJx9aG43cpkFvRsWQPfdWZmAQsksB93aFPr1q1/Yq7wxuXSuZU3HIJ6faxVgOC23csiCASJ68u9c1dzysFuKrKJac7VzkiRHI5PY0rKqUiM8GsFgxtgwCIJJUz3UmD86dpdBa2g/s6IT02qCPpIpujtwibrjXD74ZmycekCM/jTtXrAqT5ipB8yiY9Z6UB9TAPtA91WttaXZbKZHlQ7ycA7og8hFDbbalWZvCuFmADE7GJCzHM45nlWk0mpVU2t4rer2nJ/BakbiFvcJYrPLcrL+YGPWucU+WFZJr+lIy1t9SrKyre3AFY8phSZzOCO2THpWt0Vt7mnUXN6uQN0EBgZ9MD5U/TXEfcyMpCiWI5CSBz5ZJqO7rQCQxtwCwI88yOU/uyOnf61NzjHeyiU5/2hJMdKTGaBWOMtHntMTJCwVHI8jJEfGjOmuhlDCYP9RXRyRk6Q0oSiviRxx6VR1SBt+9QyoAR3BaJMAjdMDnNX3cDmwA7kwKpakAXbsEHyJyyOaV2SWlD4I6pMpMQzsBcZwLZaPEVDCYI2yAI70U0xumyTZRN6uMXLiAMpwSrruBM7ecU69oWe4jhvL4al12AhhncQyHLQR2wO80L1inyQSJZoicADHIczg/Koa2/Jq0L0WNeDctOuot2rdwiUIvW/NAMTugggls+tZPTez2vRWQW9gP3L1pQWkEkw/OBVq9fx5WuTB6kxziRGK7rdc4UANdWC55meRgfgK6M2th5Y0QL7P8AEOj3f/7J/wDalVZeK3f97d+v865Ta36E0L2WdB7TX3915ODBAj4HHwolpPae7ukqHGJQYI7zAP61mL+jewTacKl0e9JJBxKweWYPOOXWpNKB5w95AoCt55Bck4EiZiQefKvJWSaltJ/exZYY3TSNlxH2ra3AFgKWEpvO4mZHIQeYIqK57R3GDkXQFBQAJaljuIBImZgSTjoaD602r+xxZl1A8yt9lQGgySWjPLAip10U4ult7AwoV2Yx/dwAoMDyn0zTrqZ3al9wdmNV+wWPFi4B8W7tVhvJuhPJ1/uoAblj41esXdNcTclg3fu+IwYE+pcnb881lNV7PX7aqHC7Ochc7YDZMc8xB5kwJq/wK6qrDPAK4nkVB5N1wCMcjUZZ+qT+Hff14O7ULp39zS8Et2ztKaa1sbcS1seVAPdBUgSTPQUYtWVD7hujkApBUSQvJemZznmelZzRcU8Oy3h+EqwYIkDAwYjInnkZmn+yvEmuA+JsuE3GRijiFACYI3GT3GPxz6sHOULbAseOMlSYC9q0J1MgH3mP/wAj/GqWlSNSxjqfymjHtCoF8wNoyY7cjFVLY/en/Mf+ma8nJKmzdFLwbSyfNZPe3/2n+FCFa0rFEuWpmdqsM9z68hymi2mP9x/kH/Q1UdRwe6rlktR8AB9O9ep0Mud0uOTyP9UTpVFvnjwR7qbagdKjRXPKSZIxnK8xjt1pl0MvMEfERXqKn5PAk5R3af2LTMszGaa0Vn7vFrqF91gFR7pttLHOJBERAzHepdTrmulfB8aziTvROfaZg/8AKBSa96SZpUI6NTkq+XJZ4prLqEC3aDDvzJPaJH9Gq2g4lePi+JZgqCVGRyHzxM1Na0zNu8W6bgKKDIAyvM+UDn9aZw79mtozJeRkMmF3GCTmJJJEnt6z2WTpq3RTE3KL0JOvlRYayjv4jIx90BWBYCJyFEgHPSh2oupuPkuBGF0FR5QzLhTkiZ9T2gHFWtRxK9v8O3p1KT/eM2T8IIgehBojYKOxCssgwZMAFs5PSg2vOxaDk3S3/J8A61prTohDOG8NiBzKREs1sSEEx0ANdFobRbF8MsN5W2mTu+kAE45Yq/q9FaFwoRbZ1KuYgsDyViOY6wa5rrCOAHAIBDD4gyD9a6K1bhlNxelpp/mS2ySw23ZkSS4lZyvIELknqJ9cUrgb9mujU3bSsQy2x5TIHLAiTg47daYNJbcNuQQRBjBMmYBGZJiuX/ZwXDF+/uQHAS2qmCBO453cuYAI79ahmyRhs+TX08J5OFsAPZ/gdxrTXLV9ghZt4Qsjrzgsoztgg9fjRrUcEvIE3XrJIy4ed+VPvGCAc8yenrR/huhSzb8O1u8PJhjzJ75M4AEntVzSrEyeXQVhWWntyenHBS3PNjxNLZUOq82JlOe7dyOMeb1696JezvHbe0ozAAGQT5ViOQk4yJjrurR6/RW7gMoBu5kCMjl0556iqui4WbIJIt3QzDznb4izOeUYPSB150Y5JN7P9hZ4vD3Mb7ScOu3g+qtahHtbm2rJBAXG1QYBODEc4PWr/B7Vy1pzbuDbcXDA9CzSOvp0NaXXcNtXiWa0kyQw2wQwgTEDB5g+tZX2juHT7gq7UL2wo+JMjduJJ8xOYn0q1X+YsYqPBr9baWdwuILnhyFKy0DBbdK9CeYnGczQDi18WzbmPfuA7hImFhgRy5wD60S1uouM1wLa3bEWWxIQqJMMm4CVce8cqc1meL65SltSWQ+bcB0krHTn5W+nrQezDHdFPxovdPsciZyFj0/1p5uq1uWYztI948zK5nPWhV3VfvGO+QSM4B8sRjpNMt60kNu2R0EDuOX5/KmC5F/TXl2jn16jvSqlZugKJtg+uzn+FKiKaj/w/qt5S5b01zcT5rlyWkzkHBBiT8loZquBOblvy2l8zAqpAJAYrAUHmQowJyTzzGs/YNW2oBUFMMRuKqpGF8wEkwG+tE+F+zhDBrgsEifctRzMnM551ihhcnSTX5iSzQ/MEjhiaOyznTo1weJ+93AhUDtO5PzJEebmSaC6v2yuM6Ml1xB5IwyW92UJAC+UdDyq/wD7VeF+Fo2uK7RvUGGeSGJLKRO3bknkK8y0F23uG5mQEAkAzJGR/COVJPp3G3f2G1qXBur/ABi86l3usGXaAodTtXqceZTuHYR61f0jpcwtlWAAQFBuJMeWWgMWiD72RWFXeINpt5yj7gCQASVz0mI25ia2vsApe1cfxblob7ZYKq7Xdc7pOMc8DrUblDdypBi9wxpuCX0/eWnsptADWrlsiIkhWO8yeR59jXbvC7ty8wbaLhBffbW3bEmAWgSzgwPNBOBNaLhjYZ7eZbLOhXeQPemAD8RVhGYclQE8yix+Na6cl/Vt+4+lGD41pmtMEYkkLknnkK3X0MfKq4/vfn/20S9vn2XpiZgZ/wAo/hQc6geMBnO0/wDMIrHkjTaRWL2NvpTjT/D/ALWqZdMyr5m2oBG64xOB3LEk/P61V0beTT/Ej8xQzjGjW625773QGygPlAzjao7jsTirwVoA+/xixbZjYs+O4WC4AW2schIHLJMChOo9oeJliy3LDKThIgj0yZP0+FF7NsbdqWyBGRB+Gap/sp2wsoQWyFGBuMTI5VtxRiYs05+FQMT2i1rbke1pS4EwwYtt7xtKgYPvEcqk4bd1Rbfft2kQrKi3bC/ORzETUtzhwwXh+QBYdgY9Kpo9myCRcS25JYbOYMxymekdOVaE1D4m6+RgzPuLTX1oNarVeEqsbW+eniJJHok7m6YmaA63T6UDx79lbe54gLnzHy+VZ+meVSWHNxjd3LcVR0ZpLRzIK849aZxbVAHwrgDAgNtYCBzOGEGMdTillmSjqk+ePIssSclDGvhXL4bfqy5/b9oYVN0RJ80jmPdAkZiZHflV4cO0NstN1rTNDRudFhsiWRoyDMVn9Nat/tAS0LZXy7Qxf+8Mzt8pgjAmRFZ7ifEmF+4rOrAO+QSRJJOJz/pWN5M3u/8Ar5G7HgxwinVf55PSLVmzasjY9pjJBKvznlkyxPKZoH7U8Xa2LbWoa1cDAXFhhvQwyggx/Rqp/sz1ztqVRn8pDGN0ZCkGR159QKJcR12qe61tiyW1dlJTZAAbLLIycCDHSjLqdMak6+o3YxtqSW5e9jbRK+Ldu84IQkyOg8pgzAn0kdq0Sa1N3kEn1GPiJrz721176e8Uts7yqedhuYyi4ByJzJ+NUdFxG5Cl7bqDjdPyEwDk/qRWHNOadxW3ze/0NCnoWlHrtpGOWPOpvAGOee0fj3rH8E4tcEW3fOMrnn1II5fA9KNHiSh7Sm6WZy3hnapG4DPLIME1CGXX539Foy1II3tNHuwPl+EVWbTqQQQQ3cZU9pHSpb+vKFQ922C52qCp8zfdBnn/AAqS/eIjcLYnkS+36YNVjkkvmV3BL2Lls7wC2zMDMj7S/MT6TB6UF9rDtdbyhHQKrrOZVuwgxjkT1+VanUXWX/05+DfkcUF05F4XQtszZbAbMeIAxTErM5B6THQzs6bKSyqzPajVXNTYHhwHtg+UTudSQWXtDCYXuI7UOt6+27ohRXLKBLKMGSZ5TgA/Wr9vRXrb3L9vcArDfaZSAyMRO1iAZkAzzBANB9Ne3asyoDedwdgDEHdEMGjInpWuVSt3wRW2xy9wNd2/duRsg7QAQc4gY51HrOEgk7bdtBiHBYjcPsuvQHHIH5itXw6ybrXgjHatu1tETDeJeDHb08qL864ukuKGDG1tFzwvcJLMTAEB8/GKi22PSPPdRpDuO5RM5iY+UCPpSrY3dA0mFnJGN4GMYHSlQ1v5HaGeh29YrOrSphWGD94qf+2rR1VuPMBAzk4rzm5xrT20B8UswAEAbiWjlumAefOhGt9o7zABYtI2A7enPzEbfkBVrl7IduHo2Ht57Qad7D6drdx1eMoVWChDqQSeW5R614s+juDaIOYjkOpWe/MGtRxDj1wx4dw7eRDInPoQygSPTaOnOtFpvaHS2kTxLAN3apfyRtJ77iO/KKSU6dSOSjFmY9nPZTVXfcGxYEknaO+DGSMHl0r1j2b4Ra01pV8MPc5s7S0v3EzHOMVS4F7RW74PhoRtiVgYBmIj4VZ4jq3IHheU5nd15RmDFT0Kbsomq2C2s4gqgG46oJxJ54wBVfh/EUcs1uSpyzsxgHAAVTy/Cs0f2mZKI5/zZ/GKtaLXXbc/+WmecZn6E0soZbpVX5lVLHW7f2Kvt2A91cnIUyfgRWeuWz4qHsLU/I5orx3UbipCOkQNryYwTjAxmPkaHFvOvwt/nWTJcZtMaO6s2egP7qwf8bf9ZFGdYltkbxFQY95lBH0PP+dAuHN+4s/+5H/zmpNd+0uxhcAnaSyxAOPLkZHcVSEZSXw8/PYSU9JDq9TZtISwO2MsCU54wqkR86D3eNaeILFpAlVIeeskFGJ5zWg1VvWXVCXGtBcY+HcBM/DlVJeD3FeBbBBOXXYir8pLN8IX50fwubV/yfx/BKU5PwDuI6+1csMCXAJ24ttu3RPRh0PKKx17hN1mCWldl+yWRkIETksApyOh6/GvWBwgqhIZnaDAJCqT0E7cUP4TwY3CzaqyRtI2nfIOTuB2tDAEAZArRDEqvJK2Job8IB+zPsxcWWNxVLg7l3bgwE4wBtOR96iXE+GXLK22QiFK70CCCuPUAAUf4mbVpd/hghM8jtEZEAAhTjBjnFZW7pddrn3hvCs4I3Ey0dSFgn5x+dNKSS0oMcaTtLcJarVaOxbDHbbuOpPkTcwMf4QQM98TXmPEtXpGZibDc/e3kFjndMGBmDJnnXrHDuDLb0727zLcc7iSZKhZJVYY4CyYHSql7gWhZDcuWrQ2rlt7RAyZ82AM0FkjF019Sji2Y7huv0dvZc0Vl7V0bgxLNcYr2zMgnsBMCK7e1G5wzynTzY83UMpOOmMVWtW3Rm8MWlxhgPdAwCuARPPnOaajXUAhlOZYsOcchPvYM9udeZnanK7/ACJ3ZNx3UuEXwxuLwBnAVVCkST90VT0+peyG3T3Ug8xA+0DyknHrRbS3Fu2riMglTIKkQRHWeXXJjtWV12lZX97EiJGB0j51fBj7kNMvH+cjNBTUXyqNcQQdpILBszghW3RBJEY/Oi3sXxIb1DEOealpBmCCZmCQMfOgnAeD3LwLeHvBU+XdyQfaEmr9jg15LP8A+Nt2ydxU+L35DPynECqPB48+zkmmbziOt07XNOLgbf4k2oJgXArZP/Du51Jx/U6Vn0y3r3hst1btsY87oCu31H7wY55FefaezqcMGMidu9Bg9wTyP8elda1d1BtvczcssWtXN4t2wZUkOrISTIHJhR/DU1vxZfuqnsb/ANrdPbu+Cp1C2it1XAODc2zNsZ6/PlyoJ7B6XUJqNUzj92XILbpDMIKgKTIhWOYGMfDL+0tzVPesNdCHwmR/IdwMEN2HPb2616H/ALOw9zT3btxNhe6xg9oH8vpT48OhIWU1Md7Q2L5tH9m8IXJH97O2Ovu5msGbbW7+xipcAhwimA5iSCRuIA7k16q1qe/0ob7QcO8Ww6xJA3KequhDD8jirN+KAjLexd9T4rZgm3MEhtqgt0zzduWaoNdUlA8P4txgVI27W8sNBgyS3PrHfNRcH1T2UuqYkfu4PbaJySJA8p+ZqpwtxNpbh3jxcsTOGiIziCO9Uxq39GQztqP1X7h25pApK7+XcNy6clg46jnzpVLZ4ddYbgq5JPmjdzPPnmlUeyzR3mC9eGtWxprep07F1KgOtwEj/COYPzYZ5Vm+K8Ke1t8RvE8u4QScSBy6AnA7we1eqaDgFtDubzHHP+s0G9t1T9psBlBDWroCnkSpVl/M/Wp4csnJJnTjGtjK+yeiVr9rahJXzRHVVkZ+JUxVf2x9mrytcvKWcM8lNpDLvMf8QkgdKM8L1Qt6tXUIsKAQqEgQw8sCWJycme1E+P8AtK3hjxLd1kfeSAu0DbtIDMASgM9vsmrTluTUE0P9hOEnS2izt+8cAvMFVAyF9YkmfU0Qf2ptByNhuWxhrqIxUPuA246ASS3Ibe9Y7X8SvaxPEmUJgLbWFA7mJkiRzM1XuItu3vYlCQWUAyzBjIIA6euPygavCQ8YUt2ej8P4rZvAG0QwIBG0zgzzHNTg4McqvI6+teWezJZ9XbZpJ8RdsHduYq6mT1MGOvP516Wl4jmIp6EAnt2oBtkdh+ZH61nLh8yfBfwJo17fPKoR6f8AUKy928R4Zn7Lfg3+teflj8bLQexvuHH/AMvaPa8v/Wv8a0dtBiZMgf1yrMcNP/lh6Xh+amjrMJ5wfiRVsK/gWZf8Nc8/6FdYwJBqmjtM7z+B/Sm6i7tG4ktkDmOvx/StApPqrrbcPsMjIjPYQcZqYLtQAmTzPTJJJ/H86qeHN1SRKqJx97+vzq7dyvr/AFFKpWwtUjHe01wEncCYuIrBgwXazKAQxG3I3DBPMzFaNHAXB/KPlUHEbAuW3tNyYEfDsfkc0C0HFjab9n1MBwQEuY2uvQz0P06Uktp34BF0E+K8QW0hYgnB6fgTWR9o/alWR/CtL7sOSozMTk8+RrZ6mzburDZUwccsZn1+tYH2j9nEty0gKzEBZLYEkE8pxJ5YmpuDb52Okn4M/qtUAQ77gWBxIHbn6/CrfB9ULjqjRAmGMgj5Dny+dZm84bAJC9jn4D8KMcABJhWgAS3z5CJz/rQyY4xjbI2ejN7N2/AFxrxtuz7SSVIYRC9QQI5wc9qyut4aPdZYIMRc9zBjngqZnme3wrtjity0QFfw55HbJJJEkn3slFq6vtH4qtbuol4Qd8oFaCTEMADuBxmhDPGCpp0PqRF7OXBYLAQFnayTK47CeQImMiRNbr2U17ah910h1EPaZWYQckkrjOcASIUVleHcY0EFL2jcIvl3OZM8wIaGP2cjHqa1/ANVZXwLdhVIdWDEEA22tqPLsJLAGWwCYjrVlljJ7MeMtqNHpbaqgUDAkDr17mTUN+yhceW37rTuQHqsdqfuOc1XctvJ3Y2rHfJafyFUsND04ZZ5mxak8yqhZpuj4ZbtXGdFK7xBG4lZHKFmB2rouGec5oB7U+0w06+Qq53bGUkyrRK4/Ht60ssiStnVQdsJCjn8zJg559aXgrM7RPeM/WspwT2tL6ctctkXF8o25kCASR3B5gUJte1Ooi5cljtVswsSI24wDPeB72eVTl1MYpWKO/2g+zwFwXgsrOQMCcyGPMTJIjrPKsvpdHc016yt8iGfEctsCDzM9eVarhPtYt24GvAG2clBMbo2yUJIYc89I+FCPbXVBblpP2RbaWxut7WlWtuo3AR7uCIAJ5GOVVw9QtW3/oJxU40/FGjsWGIxcxLRg9zSrG2OJ3FELeO3JHLkTOfXOfWaVX1RF0M9UmsP/tSRp09xDBHirIMYYLOflW0B6VkP9qVtjZtMrQVuiYIHlKtMEg5wOh+Brz8cqkmXlwYPS6q3beHu3UBgzayJnIPmHrmDUVrjGotufA1D7Wdo3GdwLeWUaVGDMADmflfvtobqsBbvpdRDAO1g7jrvUiJ/yAfCgYuKOmAR1JIj5CeUchWzTe5PVtSHcL4xdDOrXX887kDFQxJkjy8gewIHpFFvZrhpvb9ihRGSSYRYMgQOeIiKzf7Mxuk7ZXc09Mcz8cH6VtuD8URLPgq4uFpk28AAjILnMjOdp/WnjW9CvcIezdoWb1jdtX95ZMmRC+JB5nHXJ5gzW29r/aNLW1ECXGbGxTLQOZlQdoyOcfOvLtdxI3bcG2WkBdrZO0HGTPxwB8Ko8PKKpRdoP2h1k4HqAJ/E/ETyU0PBUzacf4lbvKFVbqvbMP4igTJEFSMMMN9KBatRtQnAhvTrTU1UWWBncI94zjmozmYihN5hchXYqc7TMAdfMOqnljPX44ZW5thnNR2Rs+Ee0trwHtsI23QZn0H6giiOm9plvXlROTEmSPsgE/iYrzHU6gIxQrkEhs84Ofjy5+tXuDcSFm+rySBBgcyp5/CnjceODO8jfJ6yup+XwqZdR6z8axD+1ouJFtf3kTJ6HvH44rR8NcFFDXV8TaGIGYUkDPWZNao5IzdUOmGkvDpj/Kf0qU6o9D8jQvw2H9f0a74h5H+v6mqaBrYV3hhnn35ih/FuHW7ybLi7l6HqPUVELtSLqWHX60NJ1me9oW1Wltp4B8S2uNrKMIFCqpIHSJnHPlWc1XHzq4S5aKXV3MufKQAcZxJMD+FafjfEnkqVgj7pMR8OvzrK6+2hV7uzyggKsRNw5/AAmRmdtKsW9oDe4E4Jw9hcd7ls7AgcueSi57piMgkRIGM1av662GCD3ZMuAREYHPn0/HFSarTXLdlroYqxQKZmNsyB1HM9u9Z+9c3ruJ82cyBnqSPl0pckG3T4FYZ1BFu4hJZgG3EEYKqA4IaQD1kDOK5qOIsVD+UIW8sgkACZ/AZPeetUVVPDKw/iQpJf3YxyBE8jmPyq4dBcNtbQ8NkDmZUhlk58syVHTPWoyjDZP9QDr7eKocG4+3G2MADoIJ3ZJMc8965wbX3rMPDBskmYJkQZHOI5fGu+zthrisiht87jByEByesZPI/6S8X4QUOCdwiWkhOm7HMDJHcEGlca+HwdpZ6f7P8Atdb8MLfuGQikMVJZmk7pA6jBmBitQ+ps+H4pvIEgeYuNonlmYGa8B1Woa2q5DmADBJ3ACFMdcYx2q/pkbZ5lQyQUViSFaJAMevUxSdycVb3GU2e16o2/Ae41wC0UJNwNgLHMEfpXm+s0SPcIW6jWdrSwILsQNzMViSd2BAyJ9azmq4oUUkXGA5OgnbPQkdsd4qq2udzz3N1nnHy5j4UNTnTaC52auxZVF2vc3kgEDnMQBM5GABBx0qh+0IjwWBYzKnAAHMdoGOvX0wM02pVnBc+YepETnoYPxqfW6cFvEQs4h96rM81K7WJ832pnoB3rM4apfEwahn7TbJNtraWzPkjm0coYDaAfoeUgVp+FaS1d09zTPem4r/ud58xEAFVkRBIlR6msnqtMvuqYjaR9khmyo3dOfpXNHr7tsqw8qrgoxLARz9CCIH0z1qsU4vVH7MaMqYtRw51YrtbB6LSrZaNxcRXe4m5hJlVHw/CKVV/Ev0ylRNHoQ0szMZaPLOF9B/HnVP2s4d49nw9xHmBBETIkdcdaVKlju0MzzbUezlxX8NLguYZuUR1OSQcenfrQbjPDWsZdNjQCIYEN64PWDzpUq1Qb/UjNJNUULLtc/wAWNscuhgf0adp7Ci6mwEwwJJMAqPTofrzpUqquWcuDR2F8znbuADOcx5Z7deYEf61Nb12lUMzae25H2nViV9QAwB+c0qVB8DPgFWEW6RZR9qu4EkE+93HXPc1PquEmxcFu48g82AkiY6E8vQd65SrJKTUtPggUOMcIuK8DzCV8xIGWiJBJPUd6PcX9lb1lza3i4Ss48oCiADk8yD07/OlSrnkelDaVpCHCvYd2UOL21sHlI+HQ0Ru6bajO14gJhyBKkqcj3dwBiMDqaVKgm9SKRSXA5ONeK26yjo9osXDNvBBUCAGYiBg4K8+Rpt72nteE9vwg13zTcDMDzmcj3oCjt5cRilSrW5PVRfSq1fII8L1F/wAGw9yzuF1iQUu7iq58pD7ex6n9KVj2i073BbVjvLbRKtE9enof6zSpVyk7M2ePFMs64W2ui06Bm2l5zIAxz9Z/Cm3uGWn2LDbVJMTzJjdz7wB8hSpVV8I4A+11+8l8LYtK9tUl1ubdpLHGJkMAOeRmsRrkXczG01rsAysqn4jO0noAI9aVKuYWR6M3ENsudymAvU5IiJyvQdOddva1xOSNpz5j35Dp0H8aVKpSSb3EYS0PERaAIJHiJDqPKCpLMPdj7085x8qu/wBu6ZrGRdN4eXf0YSxG7zyTHX1PPqqVdHg5Gd/tC0XEqwAAgr5SGkGDkyPe+Z7UUs2WYEo4C4lmmSTzBGfwpUqTNsjmNZwwYMwEqRuAPvbftdWBIPfCnvmhYW4xDJIYnEEDmYz0j6UqVKtlscWzrSCyXhyIHfMA5AwcEdau6B4UhVJWDMtGZExAmMHrSpVHKlFbHeSDScURyVcMSQBzO3HLE5yOtU9KT42wiQR5lJ5FRhpgjpyE0qVV0pXQwUS3ej92q7enL5817zXKVKs+3o4//9k=" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"></span><br>
+            <br>
+            <span>Salvador</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Rosana</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Romilson</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Elísio Medrado</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Miquéias</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">18/10</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Amor</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Malaquias</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Carvalho</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Insta</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">41</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Costura</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salvador</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Amiga</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Produzido por <a href="https://www.instagram.com/miqueiascs_/" title="Miquéias" target="_blank" class="w3-hover-opacity">Miquéias Carvalho</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+// Timer
+function countdown(){
+    var now = new Date();
+                // Altere a data do seu evento aqui
+    var eventDate = new Date("Feb 24, 2022 00:00:00");
+    var currentTiime = now.getTime();
+    var eventTime = eventDate.getTime();
+    var remTime = eventTime - currentTiime;
+    // calculando o dia, hora, minuto e segundo
+      var d = Math.floor(remTime / (1000 * 60 * 60 * 24));
+      var h = Math.floor((remTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var m = Math.floor((remTime % (1000 * 60 * 60)) / (1000 * 60));
+      var s = Math.floor((remTime % (1000 * 60)) / 1000);
+    document.getElementById("days").textContent = d;
+    document.getElementById("days").innerText = d;
+    document.getElementById("hours").textContent = h;
+    document.getElementById("minutes").textContent = m;
+    document.getElementById("seconds").textContent = s;
+    setTimeout(countdown, 1000);
+    
+    // Verifica se acabou o período do evento
+     if (remTime < 0) {
+      clearInterval(countdown);
+      //document.getElementById("demogrande").innerHTML = "FIM";
+      document.getElementById("days").innerHTML = " ";
+      document.getElementById("hours").innerHTML = " ";
+      document.getElementById("minutes").innerHTML = " ";
+      document.getElementById("seconds").innerHTML = "<small>FIM</small>"; 
+      } 
+  }
+  countdown();
+
+  // Botão
+  var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            
+            a.innerText = 'Te amo 💗!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Clique aqui!'
+            a.style.background = 'green'
+        }
+        function sair() {
+            a.innerText= 'Infinitamente!'
+            a.style.background = 'green'
+            }
+
+</script>
+
+
+</body>
+</html>
